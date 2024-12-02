@@ -4,11 +4,10 @@ import torch
 from transformers import AutoTokenizer, AutoModel
 import json
 import os
-   # 设置 Matplotlib 的缓存目录 
+# 设置 Matplotlib 的缓存目录 
 os.environ['MPLCONFIGDIR'] = '/tmp/matplotlib' 
 # 设置 Hugging Face Transformers 的缓存目录 
 os.environ['TRANSFORMERS_CACHE'] = '/tmp/huggingface_cache' 
-# 确保这些目录存在 
 os.makedirs(os.environ['MPLCONFIGDIR'], exist_ok=True) 
 os.makedirs(os.environ['TRANSFORMERS_CACHE'], exist_ok=True) 
 auth_config = weaviate.AuthApiKey(api_key="8wNsHV3Enc2PNVL8Bspadh21qYAfAvnK2ux3")
