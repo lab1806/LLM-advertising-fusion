@@ -79,7 +79,7 @@ def initialize_weaviate_client():
 
     timeout = 5
 ###########################################################
-    WEAVIATE_API_KEY = ""
+    WEAVIATE_API_KEY = ""  
     WEAVIATE_URL = ""
 ###########################################################
     
