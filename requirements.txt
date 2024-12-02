@@ -1,0 +1,12 @@
+huggingface_hub==0.22.2
+minijinja==2.0.1
+openai==1.2.0
+weaviate-client
+transformers
+torch
+langchain-community 
+langchain 
+gradio 
+sentence_transformers 
+tqdm
+ratelimit
