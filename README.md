@@ -50,18 +50,26 @@ pip install -r requirements.txt
 5. Once the cluster is ready, copy the **Cluster URL**.
 
 ### Step 4: Upload Data to Weaviate
-1. Paste the copied **Cluster URL** into the `fetch_from_database.py` script:
+0. Install anyio and weaviate:
    ```python
-   WEAVIATE_URL = ""
+   pip install anyio
+   pip install weaviate-client
+   ```
+1. Paste the copied **Cluster URL and API key** into the `import_data.py` script:
+   ```python
+   URL = ""
+   APIKEY = ""
    ```
    Retrieve your Weaviate API Key and Weaviate Instance URL from the Weaviate Cloud Console.
+2. **Run import_data.py**
+   Models are required for encoding when uploading data. GPUs are recommended.
 
-2. Update the WEAVIATE_API_KEY and WEAVIATE_URL variables in the app.py file (lines 81–82) with your API key and instance URL:
+3. Update the WEAVIATE_API_KEY and WEAVIATE_URL variables in the app.py file (lines 81–82) with your API key and instance URL:
     ```python
     WEAVIATE_API_KEY = ""
     WEAVIATE_URL = ""
     ```
-3. Run the following command to upload the provided dataset into the Weaviate Cloud database:
+4. Run the following command to upload the provided dataset into the Weaviate Cloud database:
    ```bash
    python fetch_from_database.py
    ```
