@@ -71,7 +71,7 @@ pip install -r requirements.txt
     ```
 4. Run the following command to upload the provided dataset into the Weaviate Cloud database:
    ```bash
-   python fetch_from_database.py
+   python import_data.py
    ```
 
 ### Step 5: Run the Application
